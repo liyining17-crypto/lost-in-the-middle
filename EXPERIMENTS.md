@@ -3,6 +3,9 @@
 Note: all of these experiments were run on one or more A100 GPUs with 80GB of
 VRAM. You may need to modify commands to fit your own computing environment
 (e.g., changing the batch size, the max memory per GPU, the number of GPUs, etc)
+## qwen2.5-7b-instruct
+PYTHONPATH=./src python3 ./scripts/api_get_qa_responses_qwen2.5_7.py --input-path qa_data/nq-open-oracle-test.jsonl --output-path ./results/basic_answers.jsonl --model "qwen2.5-7b-instruct"
+
 
 ## mpt-30b-instruct
 
